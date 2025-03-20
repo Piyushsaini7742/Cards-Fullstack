@@ -4,9 +4,11 @@ const mongoose = require("mongoose");
 const cardRoutes = require("./routes/cardRoutes");
 const cors = require("cors");
 
-app.use(cors());  // Enable CORS for cross-origin requests from frontend
+
 
 const app = express();
+
+app.use(cors());
 
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("Connected to MongoDB"))
