@@ -5,11 +5,11 @@ const Card = ({ img, foodName, starRating, foods, place, distance, cost }) => {
     <div className="bg-white shadow-lg rounded-2xl p-4 m-4 w-64 text-center">
       <img src={img} alt={foodName} className="w-full h-40 object-cover rounded-lg" />
       <h3 className="text-xl font-semibold mt-2">{foodName}</h3>
-      <p className="text-yellow-500 text-lg">⭐ {starRating}</p>
+      <p className="text-yellow-500 text-lg">{starRating}</p>
       <p className="text-gray-600">Foods: {foods.join(", ")}</p>
-      <p className="text-gray-500 mt-1">📍 {place}</p>
-      <p className="text-gray-400">🚗 {distance}</p>
-      <p className="text-green-600 font-bold">💰 {cost}</p>
+      <p className="text-gray-500 mt-1">{place}</p>
+      <p className="text-gray-400">{distance}</p>
+      <p className="text-green-600 font-bold">{cost}</p>
     </div>
   );
 };
